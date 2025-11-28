@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Divine Commentary - God's Portfolio Website with AI-Powered Sports Commentary">
+  <meta name="theme-color" content="#0a0e27">
+  <title>Divine Commentary | God's Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <!-- Divine Starfield Layers -->
+  <div class="nebula-glow"></div>
+  <div class="starfield">
+    <div class="shooting-star shooting-star-1"></div>
+    <div class="shooting-star shooting-star-2"></div>
+    <div class="shooting-star shooting-star-3"></div>
+  </div>
+
+  <div id="app">
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+      <div class="nav-container">
+        <a href="#hero" class="logo">Divine Commentary</a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Creations</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#awards" class="nav-link">Awards</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" data-commentary="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">Welcome to the Divine Portfolio</h1>
+        <p class="hero-subtitle">Experience Creation with Live Commentary</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="commentary-controls">
+          <button id="commentary-toggle" class="btn btn-primary" data-active="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+            Enable Commentary
+          </button>
+          <div class="commentary-status">
+            <span class="status-indicator" id="status-indicator"></span>
+            <span id="status-text">Commentary Off</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section" data-commentary="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Notable Creations</h2>
+          <p class="section-subtitle">A curated selection of my finest works across the cosmos</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card fade-in-up stagger-1" data-project="universe">
+            <div class="project-image">
+              <img src="/images/project-universe.png" alt="The Universe" loading="lazy">
+              <span class="project-badge">Masterpiece</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">The Universe</h3>
+              <p class="project-tagline">"Let there be light... and matter, and energy"</p>
+              <p class="project-description">A vast expanse of space, time, and matter. Features billions of galaxies, dark matter, and the fundamental forces of nature.</p>
+              <div class="project-tags">
+                <span class="tag">Physics</span>
+                <span class="tag">Cosmology</span>
+                <span class="tag">Infinity</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-2" data-project="earth">
+            <div class="project-image">
+              <img src="/images/project-earth.png" alt="Planet Earth" loading="lazy">
+              <span class="project-badge">Fan Favorite</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Planet Earth</h3>
+              <p class="project-tagline">"The blue marble in an ocean of darkness"</p>
+              <p class="project-description">A sustainable ecosystem supporting diverse life forms. Includes oceans, continents, and a self-regulating climate system.</p>
+              <div class="project-tags">
+                <span class="tag">Ecology</span>
+                <span class="tag">Biology</span>
+                <span class="tag">Sustainability</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-3" data-project="platypus">
+            <div class="project-image">
+              <img src="/images/project-platypus.png" alt="The Platypus" loading="lazy">
+              <span class="project-badge">Experimental</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">The Platypus</h3>
+              <p class="project-tagline">"Proof that creativity knows no bounds"</p>
+              <p class="project-description">A delightful experiment combining seemingly incompatible features. Duck bill, beaver tail, venomous spurs. Why not?</p>
+              <div class="project-tags">
+                <span class="tag">Whimsy</span>
+                <span class="tag">Innovation</span>
+                <span class="tag">Mammals</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-4" data-project="sunsets">
+            <div class="project-image">
+              <img src="/images/project-sunsets.png" alt="Sunsets" loading="lazy">
+              <span class="project-badge">Daily</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sunsets</h3>
+              <p class="project-tagline">"A new masterpiece every evening"</p>
+              <p class="project-description">Atmospheric light scattering creating unique color palettes daily. Never the same twice. Free to view globally.</p>
+              <div class="project-tags">
+                <span class="tag">Art</span>
+                <span class="tag">Optics</span>
+                <span class="tag">Beauty</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-5" data-project="brain">
+            <div class="project-image">
+              <img src="/images/project-brain.png" alt="The Human Brain" loading="lazy">
+              <span class="project-badge">Complex</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">The Human Brain</h3>
+              <p class="project-tagline">"100 billion neurons, infinite possibilities"</p>
+              <p class="project-description">The most complex object in the known universe. Features consciousness, creativity, and the ability to question its own existence.</p>
+              <div class="project-tags">
+                <span class="tag">Neuroscience</span>
+                <span class="tag">Consciousness</span>
+                <span class="tag">Complexity</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-5" data-project="aurora">
+            <div class="project-image">
+              <img src="/images/project-aurora.png" alt="Northern Lights" loading="lazy">
+              <span class="project-badge">Spectacular</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Northern Lights</h3>
+              <p class="project-tagline">"Solar wind meets magnetosphere"</p>
+              <p class="project-description">Charged particles dancing with atmospheric gases. A light show visible from space. Best viewed from polar regions.</p>
+              <div class="project-tags">
+                <span class="tag">Plasma</span>
+                <span class="tag">Magnetism</span>
+                <span class="tag">Spectacle</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-1" data-project="dreams">
+            <div class="project-image">
+              <img src="/images/project-dreams.png" alt="Dreams" loading="lazy">
+              <span class="project-badge">Surreal</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dreams</h3>
+              <p class="project-tagline">"Where physics takes a vacation"</p>
+              <p class="project-description">Surreal dreamscapes with floating elements, impossible architecture, and reality-bending scenarios. Free nightly entertainment for the subconscious.</p>
+              <div class="project-tags">
+                <span class="tag">Subconscious</span>
+                <span class="tag">Imagination</span>
+                <span class="tag">Sleep</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-2" data-project="mountains">
+            <div class="project-image">
+              <img src="/images/project-mountains.png" alt="Mountains" loading="lazy">
+              <span class="project-badge">Timeless</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Mountains</h3>
+              <p class="project-tagline">"Patience written in stone"</p>
+              <p class="project-description">Majestic peaks forged by tectonic forces over millions of years. Snow-capped summits, dramatic landscapes, and humbling perspectives on time.</p>
+              <div class="project-tags">
+                <span class="tag">Geology</span>
+                <span class="tag">Majesty</span>
+                <span class="tag">Permanence</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-3" data-project="coffee">
+            <div class="project-image">
+              <img src="/images/project-coffee.png" alt="Coffee" loading="lazy">
+              <span class="project-badge">Essential</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Coffee</h3>
+              <p class="project-tagline">"Liquid motivation"</p>
+              <p class="project-description">A bean that, when roasted and steeped in hot water, provides the fuel for human productivity. Some call it divine. They're not wrong.</p>
+              <div class="project-tags">
+                <span class="tag">Caffeine</span>
+                <span class="tag">Productivity</span>
+                <span class="tag">Morning Ritual</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-4" data-project="dogs">
+            <div class="project-image">
+              <img src="/images/project-dogs.png" alt="Dogs" loading="lazy">
+              <span class="project-badge">Loyal</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dogs</h3>
+              <p class="project-tagline">"Unconditional love, perfected"</p>
+              <p class="project-description">Man's best friend. A collaboration with wolves that somehow resulted in creatures that love humans more than anything. Tail wagging included.</p>
+              <div class="project-tags">
+                <span class="tag">Loyalty</span>
+                <span class="tag">Joy</span>
+                <span class="tag">Companionship</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-5" data-project="fibonacci">
+            <div class="project-image">
+              <img src="/images/project-fibonacci.png" alt="Fibonacci Sequence" loading="lazy">
+              <span class="project-badge">Mathematical</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fibonacci Sequence</h3>
+              <p class="project-tagline">"The golden ratio, everywhere"</p>
+              <p class="project-description">A mathematical pattern hidden throughout nature - in shells, flowers, galaxies, and hurricanes. Because why use one design when it works for everything?</p>
+              <div class="project-tags">
+                <span class="tag">Mathematics</span>
+                <span class="tag">Patterns</span>
+                <span class="tag">Sacred Geometry</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in-up stagger-1" data-project="sleep">
+            <div class="project-image">
+              <img src="/images/project-sleep.png" alt="Sleep" loading="lazy">
+              <span class="project-badge">Restorative</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sleep</h3>
+              <p class="project-tagline">"Ctrl+Z for the mind"</p>
+              <p class="project-description">A daily reset button for body and mind. Consolidates memories, repairs cells, and provides the stage for dreams. 8 hours recommended.</p>
+              <div class="project-tags">
+                <span class="tag">Rest</span>
+                <span class="tag">Recovery</span>
+                <span class="tag">Health</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Process Section -->
+    <section id="process" class="process section" data-commentary="process">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">The Creative Process</h2>
+          <p class="section-subtitle">How divine ideas become cosmic reality</p>
+        </div>
+        <div class="process-timeline">
+          <div class="process-step fade-in-up stagger-1">
+            <div class="process-icon">1</div>
+            <div class="process-content">
+              <h3 class="process-title">Divine Inspiration</h3>
+              <p class="process-description">It all starts with a thought. Sometimes it's "Let there be light." Sometimes it's "What if I gave this animal a duck bill AND venomous spurs?"</p>
+            </div>
+          </div>
+          <div class="process-step fade-in-up stagger-2">
+            <div class="process-icon">2</div>
+            <div class="process-content">
+              <h3 class="process-title">Cosmic Planning</h3>
+              <p class="process-description">Physics engines, biological systems, consciousness modules - everything needs to work together in harmony. Well, mostly harmony.</p>
+            </div>
+          </div>
+          <div class="process-step fade-in-up stagger-3">
+            <div class="process-icon">3</div>
+            <div class="process-content">
+              <h3 class="process-title">Implementation</h3>
+              <p class="process-description">Bringing it all into existence. This is the "Let there be..." part. Very satisfying. Instant deployment across all dimensions.</p>
+            </div>
+          </div>
+          <div class="process-step fade-in-up stagger-4">
+            <div class="process-icon">4</div>
+            <div class="process-content">
+              <h3 class="process-title">Infinite Support</h3>
+              <p class="process-description">24/7 availability (I don't sleep). Handling prayers, maintaining physical constants, occasional miracles. Full-service divine support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards section" data-commentary="awards">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Awards & Recognition</h2>
+          <p class="section-subtitle">Accolades from across the cosmos</p>
+        </div>
+        <div class="awards-grid">
+          <div class="award-card fade-in-up stagger-1">
+            <div class="award-icon">&#127775;</div>
+            <h3 class="award-title">Best Universe Design</h3>
+            <p class="award-description">Interdimensional Design Awards, Eternity</p>
+          </div>
+          <div class="award-card fade-in-up stagger-2">
+            <div class="award-icon">&#127793;</div>
+            <h3 class="award-title">Most Biodiverse Planet</h3>
+            <p class="award-description">Milky Way Life Awards, 4.5B Years Running</p>
+          </div>
+          <div class="award-card fade-in-up stagger-3">
+            <div class="award-icon">&#128171;</div>
+            <h3 class="award-title">Best Supporting Physics</h3>
+            <p class="award-description">Fundamental Forces Foundation</p>
+          </div>
+          <div class="award-card fade-in-up stagger-4">
+            <div class="award-icon">&#129464;</div>
+            <h3 class="award-title">Most Creative Mammal</h3>
+            <p class="award-description">Platypus Design Excellence Award</p>
+          </div>
+          <div class="award-card fade-in-up stagger-5">
+            <div class="award-icon">&#127752;</div>
+            <h3 class="award-title">Lifetime Achievement</h3>
+            <p class="award-description">For 13.8 Billion Years of Excellence</p>
+          </div>
+          <div class="award-card fade-in-up stagger-5">
+            <div class="award-icon">&#128161;</div>
+            <h3 class="award-title">Innovation Award</h3>
+            <p class="award-description">Consciousness Implementation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section" data-commentary="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What They Say</h2>
+          <p class="section-subtitle">Reviews from across the ages</p>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card fade-in-up stagger-1">
+            <p class="testimonial-text">In the beginning was the Word, and honestly, it was pretty impressive work.</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar">&#128220;</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">John the Apostle</span>
+                <span class="testimonial-role">Gospel Writer</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in-up stagger-2">
+            <p class="testimonial-text">The attention to detail in the sunset color palettes is absolutely divine.</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar">&#128247;</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Nature Photographer</span>
+                <span class="testimonial-role">Golden Hour Specialist</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in-up stagger-3">
+            <p class="testimonial-text">10/10 would exist again. The consciousness feature is particularly engaging.</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar">&#129300;</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Anonymous Human</span>
+                <span class="testimonial-role">Existence Participant</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in-up stagger-4">
+            <p class="testimonial-text">The universe is not only queerer than we suppose, but queerer than we can suppose.</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar">&#128218;</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">J.B.S. Haldane</span>
+                <span class="testimonial-role">Biologist</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in-up stagger-5">
+            <p class="testimonial-text">Gravity works flawlessly. Very reliable. Using it constantly.</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar">&#127823;</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Isaac Newton</span>
+                <span class="testimonial-role">Physicist</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card fade-in-up stagger-5">
+            <p class="testimonial-text">E=mc2. Elegant. Simple. Powerful. 5 stars.</p>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar">&#129504;</div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">Albert Einstein</span>
+                <span class="testimonial-role">Theoretical Physicist</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- About Section -->
+    <section id="about" class="about section" data-commentary="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About the Creator</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Omnipotent. Omniscient. Omnipresent. And now, online.</p>
+            <p>With eons of experience in universal design, ecosystem development, and consciousness implementation, I bring a unique perspective to every project. From the tiniest quark to the largest supercluster, attention to detail is my specialty.</p>
+            <h3>Skills & Expertise</h3>
+            <ul class="skills-list">
+              <li>Universe Architecture & Design</li>
+              <li>Life Form Development</li>
+              <li>Physics Engine Implementation</li>
+              <li>Miracle Deployment</li>
+              <li>Infinite Scalability</li>
+              <li>24/7 Omnipresent Support</li>
+            </ul>
+          </div>
+          <div class="about-visual">
+            <img src="/images/god-avatar.png" alt="Divine Avatar" class="god-avatar">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section" data-commentary="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">The big questions, finally answered</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <h4>Why is there something rather than nothing?</h4>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Because nothing was getting rather boring. Also, I had some really good ideas I wanted to try out.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <h4>What is the meaning of life?</h4>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>42. But also: love, creation, discovery, connection, and occasionally just enjoying a really good sunset.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <h4>Why do mosquitoes exist?</h4>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Everyone needs a challenge. Plus, they're actually important pollinators. The blood-sucking thing was... a design decision.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <h4>Can you make a rock so heavy you can't lift it?</h4>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>I could, but then I'd have to invent a new physics just to lift it, and the paperwork for interdimensional permits is quite extensive.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <h4>What's your tech stack?</h4>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Quantum mechanics for the backend, general relativity for the networking layer, and consciousness runs on a proprietary framework. It's all open source though - the documentation is called "physics."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section" data-commentary="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <div class="contact-content">
+          <p>Have a question? Need a miracle? Or just want to discuss the finer points of existence?</p>
+          <p>I'm everywhere, so you know where to find me. But for formal inquiries:</p>
+          <div class="contact-methods">
+            <span class="contact-method">&#128722; Prayer (any language)</span>
+            <span class="contact-method">&#127752; Through nature</span>
+            <span class="contact-method">&#128161; Sudden inspiration</span>
+            <span class="contact-method">&#10024; Signs & wonders</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio Toggle Button -->
+    <button id="audio-toggle" class="audio-toggle" aria-label="Toggle audio">
+      <svg id="audio-icon-on" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+      </svg>
+      <svg id="audio-icon-off" class="hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line x1="23" y1="9" x2="17" y2="15"></line>
+        <line x1="17" y1="9" x2="23" y2="15"></line>
+      </svg>
+    </button>
+
+    <!-- Audio Waveform Indicator -->
+    <div id="audio-waveform" class="audio-waveform">
+      <div class="audio-waveform__bar"></div>
+      <div class="audio-waveform__bar"></div>
+      <div class="audio-waveform__bar"></div>
+      <div class="audio-waveform__bar"></div>
+      <div class="audio-waveform__bar"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; Eternity - Divine Commentary. All rights reserved across all dimensions.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Audio Elements (Hidden) -->
+  <audio id="background-music" loop preload="auto">
+    <source src="/audio/background-music-celestial.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="commentary-audio" preload="none"></audio>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
