@@ -1,136 +1,108 @@
 # Divine Commentary - God's Portfolio Website
 
-An interactive portfolio website featuring AI-powered live commentary as users browse through divine creations.
+An interactive portfolio website featuring AI-powered sports-style commentary as users browse through divine creations. Experience the Almighty's greatest works with enthusiastic play-by-play narration!
+
+## Live Demo
+
+**[View Live Demo](https://clemens865.github.io/Divine-Commentary/)**
+
+No setup required - just click and experience!
 
 ## Features
 
-- **Live Commentary System**: AI-generated commentary in three styles:
-  - Sports Announcer (energetic play-by-play)
-  - Documentary Narrator (thoughtful and informative)
-  - Hype Man (pure enthusiasm)
+- **Sports Announcer Commentary**: 221 AI-generated voice clips (ElevenLabs Adam voice) providing energetic play-by-play commentary
+- **Interactive Experience**: Commentary triggers on hover, click, scroll, and idle states
+- **Voice Queue System**: Smart queuing with priority levels prevents audio chaos
+- **Idle Detection**: Contextual commentary plays every 6-10 seconds when idle on a section
+- **Animated Starfield**: Multi-layer parallax stars, shooting stars, and nebula glow effects
+- **Background Music**: "Celestial Workshop" ambient track at 35% volume
+- **12 Divine Projects**: Universe, Earth, Platypus, Sunsets, Human Brain, Dreams, Aurora Borealis, Mountains, Coffee, Dogs, Fibonacci Sequence, and Sleep
+- **Responsive Design**: Works on desktop and mobile
 
-- **Interactive Chat**: Chat with the divine using AI
-- **Portfolio Showcase**: Browse notable creations (Universe, Earth, Humanity, etc.)
-- **Smooth Animations**: Scroll-triggered reveals and transitions
-- **Light/Dark Theme**: Toggle between heavenly light and mysterious dark modes
+## Quick Start
+
+### Option 1: View Online
+Visit the [live demo](https://clemens865.github.io/Divine-Commentary/) - no installation needed!
+
+### Option 2: Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Clemens865/Divine-Commentary.git
+cd Divine-Commentary
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+**No API keys required!** All audio and images are pre-generated and included.
+
+## How It Works
+
+1. Click "Enable Commentary" to start the experience
+2. Browse the portfolio - commentary plays as you interact
+3. Hover over projects to hear divine insights
+4. Stay idle on a section for automatic commentary
+5. Background music plays alongside the voice
 
 ## Project Structure
 
 ```
 divine-commentary/
 ├── public/
-│   ├── audio/                    # Commentary audio files
-│   │   ├── sports-announcer/
-│   │   ├── documentary/
-│   │   └── hype-man/
-│   └── images/                   # Project and UI images
-│       ├── hero/
-│       ├── projects/
-│       ├── sections/
-│       └── ui/
+│   ├── audio/
+│   │   ├── sports-announcer/     # 221 commentary clips
+│   │   │   ├── hero/             # Opening greetings
+│   │   │   ├── projects/         # Project-specific clips
+│   │   │   ├── about/            # About section
+│   │   │   └── ...
+│   │   └── background-music-celestial.mp3
+│   └── images/                   # AI-generated project images
 ├── src/
 │   ├── components/
-│   │   ├── commentary/           # Commentary engine
-│   │   ├── chat/                 # Chat interface
-│   │   └── portfolio/            # Project cards
-│   ├── data/                     # Project data and config
-│   ├── styles/                   # CSS styles
-│   └── utils/                    # Utilities
+│   │   ├── commentary/           # Audio engine & commentary logic
+│   │   └── chat/                 # Chat interface (future)
+│   ├── data/                     # Project configurations
+│   ├── styles/                   # CSS with starfield animations
+│   └── main.js                   # Main application
 ├── index.html
 └── vite.config.js
 ```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Create `.env` file from `.env.example`:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Add your API keys to `.env`:
-   ```
-   VITE_OPENAI_API_KEY=your_key_here
-   VITE_ANTHROPIC_API_KEY=your_key_here
-   ```
-
-### Development
-
-Start the development server:
-```bash
-npm run dev
-```
-
-The site will be available at `http://localhost:3000`
-
-### Building for Production
-
-```bash
-npm run build
-```
-
-Preview the production build:
-```bash
-npm run preview
-```
-
-## Configuration
-
-### Commentary Styles
-
-Edit `src/data/commentary.js` to configure commentary events and audio mappings.
-
-### Projects
-
-Edit `src/data/projects.js` to add or modify portfolio projects.
-
-### Theme
-
-Customize colors and styles in `src/styles/main.css` using CSS custom properties.
-
-## Audio Files
-
-Place your audio commentary files in:
-- `public/audio/sports-announcer/`
-- `public/audio/documentary/`
-- `public/audio/hype-man/`
-
-Supported formats: MP3, WAV, OGG
-
-## Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `VITE_OPENAI_API_KEY` | OpenAI API key | - |
-| `VITE_ANTHROPIC_API_KEY` | Anthropic Claude API key | - |
-| `VITE_ENABLE_CHAT` | Enable chat feature | `true` |
-| `VITE_ENABLE_COMMENTARY` | Enable commentary | `true` |
-| `VITE_ENABLE_AUDIO` | Enable audio playback | `true` |
 
 ## Tech Stack
 
 - **Vite** - Build tool and dev server
 - **Vanilla JavaScript** - No framework dependencies
-- **CSS Custom Properties** - Theming and design system
-- **Intersection Observer API** - Scroll-triggered animations
-- **Web Audio API** - Audio playback
+- **CSS Animations** - Starfield, shooting stars, nebula effects
+- **Web Audio API** - Audio playback with volume control
+- **Intersection Observer** - Section detection for contextual commentary
+
+## Audio Generation (For Developers)
+
+The audio clips were generated using ElevenLabs API with the "Adam" voice. If you want to regenerate or add new clips, see the `audio-generator` folder in the parent directory.
+
+## Building for Production
+
+```bash
+npm run build
+npm run preview  # Preview production build
+```
 
 ## License
 
 Copyright Eternity - All rights reserved across all dimensions.
 
-## Contributing
+## Credits
 
-Suggestions for improving creation are welcome, though perfection is hard to improve upon.
+- Voice Generation: [ElevenLabs](https://elevenlabs.io/) (Adam voice)
+- Image Generation: Google Gemini
+- Built with assistance from Claude (Anthropic)
+
+---
+
+*"And on the eighth day, God created a portfolio website with sports commentary. And it was INCREDIBLE!"*
